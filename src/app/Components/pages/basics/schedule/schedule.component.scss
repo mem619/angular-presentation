@@ -1,0 +1,20 @@
+.body {
+  margin-top: 200px;
+  font-size: 1.5em;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .list {
+    text-align: left;
+
+    ul {
+      list-style: none;
+    }
+  }
+}
