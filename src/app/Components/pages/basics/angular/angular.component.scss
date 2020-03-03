@@ -1,14 +1,10 @@
 img {
-  width: 329px;
-  height: 329px;
+  width: 250px;
+  height: 220px;
 }
 
 .container {
   min-width: 800px!important;
-}
-
-ul {
-  list-style: none;
 }
 
 .expand {
@@ -17,7 +13,7 @@ ul {
   display: none;
   padding: 5px;
   font-size: 2em;
-  left: -25px;
+  right: -22px;
   cursor: pointer;
 
   &:active {

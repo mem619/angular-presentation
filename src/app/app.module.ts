@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,21 @@ import { ClicommandsComponent } from './Components/pages/basics/clicommands/clic
 import { ClicommandsrunComponent } from './Components/pages/basics/clicommandsrun/clicommandsrun.component';
 import { ClicommandsscaffoldingComponent } from './Components/pages/basics/clicommandsscaffolding/clicommandsscaffolding.component';
 import { ClicommandsbuildComponent } from './Components/pages/basics/clicommandsbuild/clicommandsbuild.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { PopoverModule } from 'ngx-bootstrap';
+import { AngularComponent } from './Components/pages/basics/angular/angular.component';
+
+export function getHighlightLanguages() {
+  return {
+    typescript: () => import('highlight.js/lib/languages/typescript'),
+    css: () => import('highlight.js/lib/languages/css'),
+    bash: () => import('highlight.js/lib/languages/bash'),
+    javascript: () => import('highlight.js/lib/languages/javascript'),
+    powershell: () => import('highlight.js/lib/languages/powershell')
+  };
+}
 
 @NgModule({
   declarations: [
@@ -68,13 +84,25 @@ import { ClicommandsbuildComponent } from './Components/pages/basics/clicommands
     ClicommandsComponent,
     ClicommandsrunComponent,
     ClicommandsscaffoldingComponent,
-    ClicommandsbuildComponent
+    ClicommandsbuildComponent,
+    AngularComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    HighlightModule,
+    ModalModule.forRoot(),
+    PopoverModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HIGHLIGHT_OPTIONS,
+      useValue: {
+        languages: getHighlightLanguages()
+      }
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

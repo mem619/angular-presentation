@@ -1,8 +1,33 @@
 <app-content title="Tipado de datos">
   <ul>
-    <li><b>any</b>: Se utiliza para describir un tipo de dato dinámico el cual no se tiene conocimiento del tipo al resolver una solicitud.</li>
-    <li><b>null</b>: Es un valor vacío o inexistente y debe ser asignado</li>
-    <li><b>undefined</b>: es una variable que ha sido declarada, pero no definida también puede ser definida implicitamente.</li>
-    <li><b>unión</b>: nos permite definir diferentes tipos de datos para una misma variable.</li>
+    <li class="pb-2">
+      <b>any</b>: Se utiliza para describir un tipo de dato dinámico el cual no se tiene conocimiento del tipo al resolver una solicitud.
+      <i (click)="OpenModal('exampleany')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
+    <li class="pb-2">
+      <b>null</b>: Es un valor vacío o inexistente y debe ser asignado
+      <i (click)="OpenModal('examplenull')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
+    <li class="pb-2">
+      <b>undefined</b>: es una variable que ha sido declarada, pero no definida también puede ser definida implicitamente.
+      <i (click)="OpenModal('exampleundefined')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
+    <li class="pb-2">
+      <b>unión</b>: nos permite definir diferentes tipos de datos para una misma variable.
+      <i (click)="OpenModal('exampleunion')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
   </ul>
 </app-content>
+
+<app-modal title="Ejemplo de Any" #exampleany>
+  <pre><code [highlight]="dexampleany" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo de Null" #examplenull>
+  <pre><code [highlight]="dexamplenull" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo de undefined" #exampleundefined>
+  <pre><code [highlight]="dexampleundefined" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo de Union" #exampleunion>
+  <pre><code [highlight]="dexampleunion" [languages]="['typescript']"></code></pre>
+</app-modal>

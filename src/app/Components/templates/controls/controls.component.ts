@@ -15,13 +15,11 @@ export class ControlsComponent implements OnInit {
   }
 
   next() {
-    console.log(this.pageService.page);
     this.pageService.next();
     this.router.navigate([`/${this.pageService.page}`]);
   }
 
   back() {
-    console.log(this.pageService.page);
     this.pageService.back();
     this.router.navigate([`/${this.pageService.page}`]);
   }

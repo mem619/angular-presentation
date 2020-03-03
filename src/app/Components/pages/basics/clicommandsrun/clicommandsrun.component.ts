@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clicommandsrun.component.scss']
 })
 export class ClicommandsrunComponent implements OnInit {
-
+  ngcommand = `./node_modules/.bin/ng serve [--port=$port] [$project_name]`;
   constructor() { }
 
   ngOnInit(): void {

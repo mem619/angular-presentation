@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ModalComponent } from 'src/app/Components/templates/modal/modal.component';
 
 @Component({
   selector: 'app-typescript',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TypescriptComponent implements OnInit {
 
+  @ViewChild(ModalComponent) modal: ModalComponent ;
+
   constructor() { }
 
-  ngOnInit(): void {
+    ngOnInit(): void {
+  }
+
+  openModal() {
+    this.modal.openModal();
   }
 
 }

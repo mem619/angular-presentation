@@ -1,9 +1,39 @@
 <app-content title="Tipado de datos">
   <ul>
-    <li><b>number</b>: Permite almacenar tanto valores enteros como reales.</li>
-    <li><b>string</b>: Permite almacenar una cadena de caracteres.</li>
-    <li><b>boolean</b>: Podemos almacenar el valor true o false.</li>
-    <li><b>array</b>: almacena un conjunto de elementos del mismo tipo mediante vectores o arreglos.</li>
-    <li><b>enum</b>: Son identificadores que se comportan como constantes en el idioma.</li>
+    <li class="pb-2">
+      <b>number</b>: Permite almacenar tanto valores enteros como reales.
+      <i (click)="OpenModal('examplenumber')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
+    <li class="pb-2">
+      <b>string</b>: Permite almacenar una cadena de caracteres.
+      <i (click)="OpenModal('examplestring')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
+    <li class="pb-2">
+      <b>boolean</b>: Podemos almacenar el valor true o false.
+      <i (click)="OpenModal('exampleboolean')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
+    <li class="pb-2">
+      <b>array</b>: almacena un conjunto de elementos del mismo <br> tipo mediante vectores o arreglos.
+      <i (click)="OpenModal('examplearray')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
+    <li class="pb-2">
+      <b>enum</b>: Son identificadores que se comportan como constantes en el idioma.
+      <i (click)="OpenModal('exampleenum')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+    </li>
   </ul>
 </app-content>
+<app-modal title="Ejemplo Numero" #examplenumber>
+  <pre><code [highlight]="dexamplenumber" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo Cadenas" #examplestring>
+  <pre><code [highlight]="dexamplestring" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo Booleano" #exampleboolean>
+  <pre><code [highlight]="dexampleboolean" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo Arreglo" #examplearray>
+  <pre><code [highlight]="dexamplearray" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo Enumerador" #exampleenum>
+  <pre><code [highlight]="dexampleenum" [languages]="['typescript']"></code></pre>
+</app-modal>

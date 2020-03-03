@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clicommandsbuild.component.scss']
 })
 export class ClicommandsbuildComponent implements OnInit {
+  ngcommand = `./node_modules/.bin/ng build --prod [-c $enviroment]`;
 
   constructor() { }
 

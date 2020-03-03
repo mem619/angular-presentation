@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClicommandsComponent implements OnInit {
 
+
+  ngcommand = `node_modules/.bin/ng`;
   constructor() { }
 
   ngOnInit(): void {

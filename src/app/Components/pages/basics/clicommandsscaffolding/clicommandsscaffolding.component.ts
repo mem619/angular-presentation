@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clicommandsscaffolding.component.scss']
 })
 export class ClicommandsscaffoldingComponent implements OnInit {
-
+  ngcommand = `node_modules/.bin/ng generate $element $route_name`;
   constructor() { }
 
   ngOnInit(): void {
