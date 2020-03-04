@@ -1,15 +1,21 @@
 <app-content title="Declaraciones let y const">
   <ul>
     <li>
-      <b>let</b>
+      <b>let<i (click)="OpenModal('examplelet')" class="fa fa-arrows-alt" aria-hidden="true"></i></b>
      <p>El ámbito de una variable declarada con let es en aquellas sentencias que básicamente están encerradas entre llaves sean definiciones de funciones o bloques if, while, for y loops similares.</p>
     </li>
     <li>
-      <b>const</b>
+      <b>const<i (click)="OpenModal('exampleconst')" class="fa fa-arrows-alt" aria-hidden="true"></i></b>
       <p>El ámbito o scope para una variable declarada con const es, al igual que con let, en bloque, pero una declaración con let previene la sobreescritura de variables, const directamente prohíbe la reasignación de valores.</p>
     </li>
   </ul>
 </app-content>
+<app-modal title="Ejemplo Declaracion Let" #examplelet>
+  <pre><code [highlight]="dexamplelet" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplo Declaracion Const" #exampleconst>
+  <pre><code [highlight]="dexampleconst" [languages]="['typescript']"></code></pre>
+</app-modal>
 
 
 

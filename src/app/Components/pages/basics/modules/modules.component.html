@@ -1,7 +1,14 @@
 <app-content title="Módulos">
-  <p>Un módulo de Angular, es un conjunto de código dedicado a un ámbito concreto de la aplicación, o una funcionalidad específica y se define mediante una clase decorada con @NgModule.</p>
+  <p>
+    Un módulo de Angular, es un conjunto de código dedicado a un ámbito concreto de la aplicación, o una funcionalidad específica y se define mediante una clase decorada con @NgModule.
+    <i (click)="OpenModal('examplelazy')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </p>
   <ul>
     <li>Toda aplicación de Angular tiene al menos un módulo de Angular, el módulo principal (o root module).</li>
     <li>El Root Module es el módulo principal de Angular. Por convenio se le llama AppModule y se encuentra en el archivo app.module.ts.</li>
   </ul>
 </app-content>
+
+<app-modal title="Ejemplo de Modulo" #examplelazy>
+  <pre><code [highlight]="dexamplelazy" [languages]="['typescript']"></code></pre>
+</app-modal>

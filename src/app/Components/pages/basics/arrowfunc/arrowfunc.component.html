@@ -1,11 +1,16 @@
 <app-content title="Arrow functions">
-  Con las funciones flecha, buscamos simplificar el codigo para hacerlo mucho más directo y declarativo:
+  <p>
+    Con las funciones flecha, buscamos simplificar el codigo para hacerlo mucho más directo y declarativo:
+    <i (click)="OpenModal('examplearrow')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </p>
 
 <ul>
   <li>Eliminamos la palabra reservada function y nos limitamos a recoger los parámetros mediante los paréntesis tradicionales.</li>
   <li>Podemos eliminar las llaves que delimitan el scope abriéndolo con una flecha.</li>
   <li>Podemos eliminar la palabra reservada return.</li>
 </ul>
-
-
 </app-content>
+
+<app-modal title="Ejemplo de Funciones de Flecha" #examplearrow>
+  <pre><code [highlight]="dexamplearrow" [languages]="['typescript']"></code></pre>
+</app-modal>

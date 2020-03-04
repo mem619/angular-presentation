@@ -1,5 +1,8 @@
 <app-content title="Pipes">
-  <p>Son una forma de escribir transformaciones de valor de visualización que puede declarar en su HTML(template).</p>
+  <p>
+    Son una forma de escribir transformaciones de valor de visualización que puede declarar en su HTML(template).
+    <i (click)="OpenModal('examplelazy')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </p>
 
   Built in pipes:
 
@@ -13,3 +16,6 @@
   <li>TitleCasePipe</li>
 
 </app-content>
+<app-modal title="Ejemplos de Pipes" #examplelazy>
+  <pre><code [highlight]="dexamplelazy" [languages]="['typescript']"></code></pre>
+</app-modal>

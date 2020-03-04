@@ -1,4 +1,10 @@
 <app-content title="Clases">
-  <p>JavaScript tradicional utiliza funciones y herencia basada en prototipos para construir componentes reutilizables, pero esto puede resultar un poco incómodo para los programadores más cómodos con un enfoque orientado a objetos, donde las clases heredan la funcionalidad y los objetos se crean a partir de estas clases.</p>
+  <p>
+    JavaScript tradicional utiliza funciones y herencia basada en prototipos para construir componentes reutilizables, pero esto puede resultar un poco incómodo para los programadores más cómodos con un enfoque orientado a objetos, donde las clases heredan la funcionalidad y los objetos se crean a partir de estas clases.
+    <i (click)="OpenModal('exampleclass')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </p>
   <p>A partir de ECMAScript2015, los programadores de JavaScript podrán construir sus aplicaciones utilizando este enfoque basado en clases orientado a objetos.</p>
 </app-content>
+<app-modal title="Ejemplo de clases" #exampleclass>
+  <pre><code [highlight]="dexampleclass" [languages]="['typescript']"></code></pre>
+</app-modal>

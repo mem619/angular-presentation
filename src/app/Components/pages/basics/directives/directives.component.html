@@ -1,4 +1,13 @@
 <app-content title="Directivas">
-  <p>Una directiva de atributo cambia la apariencia o el comportamiento de un elemento DOM.</p>
+  <p>
+    Una directiva de atributo cambia la apariencia o el comportamiento de un elemento DOM.
+    <i (click)="OpenModal('examplelazy')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </p>
   <p>Las directivas estructurales son responsables del diseño HTML. Dan forma a la estructura DOM , típicamente mediante la adición, eliminación o manipulación elementos</p>
 </app-content>
+
+<app-modal title="Ejemplo de Directiva" #examplelazy>
+  <div class="box">
+    <pre><code [highlight]="dexamplelazy" [languages]="['typescript']"></code></pre>
+  </div>
+</app-modal>

@@ -1,5 +1,12 @@
 <app-content title="Lazy Loading">
-  <p>Por defecto, los NgModules se cargan de inmediato, lo que significa que tan pronto como se carga la aplicación, también lo hacen todos los NgModules, sean o no necesarios.</p>
+  <p>
+    Por defecto, los NgModules se cargan de inmediato, lo que significa que tan pronto como se carga la aplicación, también lo hacen todos los NgModules, sean o no necesarios.
+    <i (click)="OpenModal('examplelazy')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </p>
 
   <p>Para aplicaciones grandes con muchas rutas, implemente la carga diferida, un patrón de diseño que carga NgModules según sea necesario.</p>
 </app-content>
+
+<app-modal title="Ejemplo de Carga Peresosa" #examplelazy>
+  <pre><code [highlight]="dexamplelazy" [languages]="['typescript']"></code></pre>
+</app-modal>
