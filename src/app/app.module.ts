@@ -40,6 +40,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { PopoverModule } from 'ngx-bootstrap';
 import { AngularComponent } from './Components/pages/basics/angular/angular.component';
+import { StructurePageTopicComponent } from './Components/pages/structure/structure-page-topic/structure-page-topic.component';
 
 export function getHighlightLanguages() {
   return {
@@ -85,7 +86,8 @@ export function getHighlightLanguages() {
     ClicommandsrunComponent,
     ClicommandsscaffoldingComponent,
     ClicommandsbuildComponent,
-    AngularComponent
+    AngularComponent,
+    StructurePageTopicComponent
   ],
   imports: [
     BrowserModule,

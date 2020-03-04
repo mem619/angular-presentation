@@ -26,6 +26,7 @@ import { ClicommandsrunComponent } from './Components/pages/basics/clicommandsru
 import { ClicommandsscaffoldingComponent } from './Components/pages/basics/clicommandsscaffolding/clicommandsscaffolding.component';
 import { ClicommandsbuildComponent } from './Components/pages/basics/clicommandsbuild/clicommandsbuild.component';
 import { AngularComponent } from './Components/pages/basics/angular/angular.component';
+import { StructurePageTopicComponent } from './Components/pages/structure/structure-page-topic/structure-page-topic.component';
 
 export default [
   {
@@ -166,6 +167,11 @@ export default [
   {
     path: '26',
     component: ClicommandsbuildComponent,
+    data: {animation: 'ClicommandsbuildComponent'}
+  },
+  {
+    path: '27',
+    component: StructurePageTopicComponent,
     data: {animation: 'ClicommandsbuildComponent'}
   }
 ] as Routes;
