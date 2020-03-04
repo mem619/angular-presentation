@@ -1,21 +1,68 @@
 <app-content title="Pipes">
   <p>
     Son una forma de escribir transformaciones de valor de visualización que puede declarar en su HTML(template).
-    <i (click)="OpenModal('examplelazy')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+
   </p>
 
   Built in pipes:
 
-  <li>CurrencyPipe</li>
-  <li>DatePipe</li>
-  <li>JsonPipe</li>
-  <li>PercentPipe</li>
-  <li>SlicePipe</li>
-  <li>LowerCasePipe</li>
-  <li>UpperCasePipe</li>
-  <li>TitleCasePipe</li>
+  <li>
+    CurrencyPipe
+    <i (click)="OpenModal('currency')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
+  <li>
+    DatePipe
+    <i (click)="OpenModal('date')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
+  <li>
+    JsonPipe
+    <i (click)="OpenModal('json')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
+  <li>
+    PercentPipe
+    <i (click)="OpenModal('percent')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
+  <li>
+    SlicePipe
+    <i (click)="OpenModal('slice')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
+  <li>
+    LowerCasePipe
+    <i (click)="OpenModal('lower')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
+  <li>
+    UpperCasePipe
+    <i (click)="OpenModal('upper')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
+  <li>
+    TitleCasePipe
+    <i (click)="OpenModal('title')" class="fa fa-arrows-alt" aria-hidden="true"></i>
+  </li>
 
 </app-content>
-<app-modal title="Ejemplos de Pipes" #examplelazy>
-  <pre><code [highlight]="dexamplelazy" [languages]="['typescript']"></code></pre>
+<app-modal title="Ejemplos de CurrencyPipe" #currency>
+  <pre><code [highlight]="dcurrency" [languages]="['typescript','html']"></code></pre>
 </app-modal>
+<app-modal title="Ejemplos de DatePipe" #date>
+  <pre><code [highlight]="ddate" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplos de JsonPipe" #json>
+  <pre><code [highlight]="djson" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplos de PercentPipe" #percent>
+  <pre><code [highlight]="dpercent" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplos de SlicePipe" #slice>
+  <pre><code [highlight]="dslice" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplos de LowerCasePipe" #lower>
+  <pre><code [highlight]="dlower" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplos de UpperCasePipe" #upper>
+  <pre><code [highlight]="dupper" [languages]="['typescript']"></code></pre>
+</app-modal>
+<app-modal title="Ejemplos de UpperCasePipe" #title>
+  <pre><code [highlight]="dtitle" [languages]="['typescript']"></code></pre>
+</app-modal>
+
+
