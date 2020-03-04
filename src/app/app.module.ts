@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
+import {MatTreeModule} from '@angular/material/tree';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,6 +43,9 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { PopoverModule } from 'ngx-bootstrap';
 import { AngularComponent } from './Components/pages/basics/angular/angular.component';
 import { StructurePageTopicComponent } from './Components/pages/structure/structure-page-topic/structure-page-topic.component';
+import { GeneralFolderComponent } from './Components/pages/structure/general-folder/general-folder.component';
+import { SrcFolderComponent } from './Components/pages/structure/src-folder/src-folder.component';
+import { AppFolderComponent } from './Components/pages/structure/app-folder/app-folder.component';
 
 export function getHighlightLanguages() {
   return {
@@ -87,7 +92,10 @@ export function getHighlightLanguages() {
     ClicommandsscaffoldingComponent,
     ClicommandsbuildComponent,
     AngularComponent,
-    StructurePageTopicComponent
+    StructurePageTopicComponent,
+    GeneralFolderComponent,
+    SrcFolderComponent,
+    AppFolderComponent
   ],
   imports: [
     BrowserModule,
@@ -95,7 +103,9 @@ export function getHighlightLanguages() {
     AppRoutingModule,
     HighlightModule,
     ModalModule.forRoot(),
-    PopoverModule.forRoot()
+    PopoverModule.forRoot(),
+    MatTreeModule,
+    FontAwesomeModule
   ],
   providers: [
     {

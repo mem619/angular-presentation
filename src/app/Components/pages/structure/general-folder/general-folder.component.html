@@ -1,0 +1,11 @@
+<app-content title="Estructura de carpetas">
+  <h2>Root App</h2>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let node of datatree" class="col-4 p-2">
+        <i [ngClass]="'fa ' + node.icon"></i>
+        {{ node.name }}
+      </div>
+    </div>
+  </div>
+</app-content>

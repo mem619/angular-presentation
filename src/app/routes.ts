@@ -27,6 +27,9 @@ import { ClicommandsscaffoldingComponent } from './Components/pages/basics/clico
 import { ClicommandsbuildComponent } from './Components/pages/basics/clicommandsbuild/clicommandsbuild.component';
 import { AngularComponent } from './Components/pages/basics/angular/angular.component';
 import { StructurePageTopicComponent } from './Components/pages/structure/structure-page-topic/structure-page-topic.component';
+import { GeneralFolderComponent } from './Components/pages/structure/general-folder/general-folder.component';
+import { SrcFolderComponent } from './Components/pages/structure/src-folder/src-folder.component';
+import { AppFolderComponent } from './Components/pages/structure/app-folder/app-folder.component';
 
 export default [
   {
@@ -172,6 +175,21 @@ export default [
   {
     path: '27',
     component: StructurePageTopicComponent,
+    data: {animation: 'ClicommandsbuildComponent'}
+  },
+  {
+    path: '28',
+    component: GeneralFolderComponent,
+    data: {animation: 'ClicommandsbuildComponent'}
+  },
+  {
+    path: '29',
+    component: SrcFolderComponent,
+    data: {animation: 'ClicommandsbuildComponent'}
+  },
+  {
+    path: '30',
+    component: AppFolderComponent,
     data: {animation: 'ClicommandsbuildComponent'}
   }
 ] as Routes;
