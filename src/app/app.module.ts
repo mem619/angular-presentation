@@ -46,6 +46,8 @@ import { StructurePageTopicComponent } from './Components/pages/structure/struct
 import { GeneralFolderComponent } from './Components/pages/structure/general-folder/general-folder.component';
 import { SrcFolderComponent } from './Components/pages/structure/src-folder/src-folder.component';
 import { AppFolderComponent } from './Components/pages/structure/app-folder/app-folder.component';
+import { SettingsPageTopicComponent } from './Components/pages/settings/settings-page-topic/settings-page-topic.component';
+import { DepedencyPageTopicComponent } from './Components/pages/dependency/depedency-page-topic/depedency-page-topic.component';
 
 export function getHighlightLanguages() {
   return {
@@ -95,7 +97,9 @@ export function getHighlightLanguages() {
     StructurePageTopicComponent,
     GeneralFolderComponent,
     SrcFolderComponent,
-    AppFolderComponent
+    AppFolderComponent,
+    SettingsPageTopicComponent,
+    DepedencyPageTopicComponent
   ],
   imports: [
     BrowserModule,
